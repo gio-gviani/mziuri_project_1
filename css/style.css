@@ -1,3 +1,4 @@
+@import url(config.css);
 header {
   display: flex;
   height: 80px;
@@ -7,46 +8,227 @@ header {
   padding: 1;
 }
 .container {
-  padding: 0px 104.5px;
+  padding-left: 104.5px;
 }
 .header-icon-burgerbar {
   font-size: 24px;
 }
+
+/*learnToCook-section  */
+
 .learnToCook-section {
   height: 691px;
   background-color: #1a1a1a;
   display: flex;
+  width: 100%;
 }
 .learnToCook-section-mainTitle {
   color: white;
-  font-family: var(--font-Raleway);
+  font-family: var(--font-main-text);
   font-size: 48px;
+  margin-top: 100px;
 }
 .learnToCook-section-subTitle {
   color: white;
-  font-family: var(--font-openSans);
+  font-family: var(--font-sub-text);
+  line-height: 30px;
   font-size: 16px;
+  margin-top: 30px;
 }
-.learnToCook-section-readMore-box {
-  width: 228px;
-  height: 51px;
-  background-color: var(--main-color-orange);
-  border-radius: 50px;
-  padding-top: 18px;
-}
+
 .learnToCook-section-readMore {
+  margin-top: 50px;
   color: white;
-  font-family: var(--font-openSans);
+  font-family: var(--font-sub-text);
   font-weight: 700;
   font-size: 16px;
   letter-spacing: 4px;
   display: block;
   width: fit-content;
-  margin: 0 auto;
+  padding: 0px 30px;
+  background-color: var(--main-color-orange);
+
+  border: 18px solid var(--main-color-orange);
+  border-radius: 50px;
 }
+.learnToCook-section-readMore-box:hover {
+}
+.learnToCook-section-readMore:hover {
+  color: var(--main-color-orange);
+  border: 5px solid var(--white-color);
+  background-color: var(--white-color);
+}
+
 .learnToCook-section-img {
   background-image: url("https://assets.nicepagecdn.com/d2cc3eaa/3125123/images/man-7.jpg");
   background-size: cover;
   height: 100%;
   width: 100%;
 }
+
+/*learnToCook-section  */
+
+/* <!--advantages-section  --> */
+.advantages-section {
+  height: 350px;
+
+  display: flex;
+}
+.advantage-box {
+  max-width: 280px;
+  width: 100%;
+  height: 375px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 20px;
+  position: relative;
+  top: -100px;
+
+  margin-right: 20px;
+
+  animation-delay: 2s;
+  animation-duration: 2s;
+}
+.advantage-box-orange {
+  background-color: var(--main-color-orange);
+}
+.advantage-box-light-orange {
+  background-color: var(--sub-color-light-orange);
+}
+.advantage-icon-box {
+  background-color: var(--white-color);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.advantage-icon {
+  font-size: 50px;
+  color: var(--main-color-orange);
+}
+.advantages-section-title {
+  font-family: var(--font-main-text);
+  font-size: 24px;
+  color: var(--white-color);
+}
+.advantages-section-paragraph {
+  font-family: var(--font-sub-text);
+  font-size: 15px;
+  color: var(--white-color);
+  text-align: center;
+  line-height: 20px;
+}
+
+/* <!--advantages-section  --> */
+
+/* onlineCookingClasses-section */
+.onlineCookingClasses-section {
+  height: 1455px;
+  position: relative;
+}
+.onlineCookingClasses-section-top-circle {
+  height: 238px;
+  width: 238px;
+  border: 40px solid var(--sub-color-light-orange);
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  left: 950px;
+  animation-name: circle-rise;
+  animation-duration: 1s;
+}
+.onlineCookingClasses-section-image-circle {
+  width: 829px;
+  height: 829px;
+  border: 25px solid var(--main-color-orange);
+  border-radius: 50%;
+  background-image: url("https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/1279a798d6905e8bb37e764e/xccq2-min.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 50px;
+  left: 150px;
+  animation-name: circle-rise;
+  animation-duration: 1s;
+}
+.onlineCookingClasses-section-image-bottom-circle {
+  border: 98px solid var(--main-color-orange);
+  border-radius: 50%;
+  width: 0px;
+  position: absolute;
+  top: 670px;
+  left: 150px;
+  animation-name: circle-rise;
+  animation-duration: 1s;
+}
+.onlineCookingClasses-section-titles-left-circle {
+  width: 175px;
+  height: 175px;
+  border: 30px solid var(--sub-color-light-orange);
+  border-radius: 50%;
+  position: absolute;
+  top: 1070px;
+  left: 250px;
+  animation-name: circle-rise;
+  animation-duration: 1s;
+}
+.onlineCookingClasses-section-titles-circle {
+  width: 739px;
+  height: 739px;
+  background-color: var(--main-color-orange);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+  align-items: center;
+  padding: 0px 123px;
+  position: absolute;
+  top: 640px;
+  left: 550px;
+}
+.onlineCookingClasses-section-main-title {
+  font-size: 60px;
+  font-weight: 400;
+  font-family: var(--font-main-second-text);
+  color: var(--white-color);
+  text-align: center;
+}
+.onlineCookingClasses-section-sub-title {
+  text-align: center;
+  color: var(--white-color);
+  font-size: 20px;
+  font-family: var(--font-sub-text);
+}
+.onlineCookingClasses-section-read-more {
+  font-weight: 700;
+  color: var(--main-color-orange);
+  font-family: var(--font-sub-text);
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 4px;
+  display: block;
+  width: fit-content;
+  padding: 0px 30px;
+  background-color: var(--white-color);
+
+  border: 18px solid var(--white-color);
+  border-radius: 50px;
+}
+.onlineCookingClasses-section-read-more:hover {
+  background-color: var(--gray-color);
+  border-color: var(--gray-color);
+}
+/* onlineCookingClasses-section */
+/* cookingClasses-section */
+
+.cookingClasses-section {
+  background-color: black;
+  height: 1100px;
+}
+
+/* cookingClasses-section */
