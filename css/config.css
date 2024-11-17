@@ -6,11 +6,6 @@
   --font-sub-text: "Open Sans", sans-serif;
   --font-main-text: "Raleway", sans-serif;
   --font-main-second-text: "Biryani", sans-serif;
+  --font-main-third-text: "Montserrat", sans-serif;
 }
-@keyframes circle-rise {
-  0% {
-    width: 0;
-    height: 0;
-    border: 0px soild var(--sub-color-light-orange);
-  }
-}
+
