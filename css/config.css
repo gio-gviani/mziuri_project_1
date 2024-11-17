@@ -7,5 +7,16 @@
   --font-main-text: "Raleway", sans-serif;
   --font-main-second-text: "Biryani", sans-serif;
   --font-main-third-text: "Montserrat", sans-serif;
+  --manu-section-cards-color: #555c6690;
+  --manu-section-numbers-font: "Oswald", sans-serif;
+  --manu-section-paragraph-color: #b3b3b3;
 }
-
+@keyframes slide-up {
+  0% {
+    transform: translate(0px, 690px);
+ 
+  }
+  100% {
+    transform: translate(0px, 390px);
+  }
+}
